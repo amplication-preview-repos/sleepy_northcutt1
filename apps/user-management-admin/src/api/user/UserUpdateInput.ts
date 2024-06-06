@@ -1,0 +1,36 @@
+import { AddressUpdateManyWithoutUsersInput } from "./AddressUpdateManyWithoutUsersInput";
+import { DocumentUpdateManyWithoutUsersInput } from "./DocumentUpdateManyWithoutUsersInput";
+import { InstitutionWhereUniqueInput } from "../institution/InstitutionWhereUniqueInput";
+import { PersonalIdInfoWhereUniqueInput } from "../personalIdInfo/PersonalIdInfoWhereUniqueInput";
+import { InputJsonValue } from "../../types";
+
+export type UserUpdateInput = {
+  addressDetails?: string | null;
+  addresses?: AddressUpdateManyWithoutUsersInput;
+  birthDate?: string | null;
+  dateOfBirth?: string | null;
+  documentDetails?: string | null;
+  documents?: DocumentUpdateManyWithoutUsersInput;
+  email?: string | null;
+  emailAddress?: string | null;
+  emailAddressOtp?: string | null;
+  emailOtp?: string | null;
+  firstName?: string | null;
+  gender?: "Option1" | null;
+  institution?: InstitutionWhereUniqueInput | null;
+  lastName?: string | null;
+  mobilePhone?: number | null;
+  mobilePhoneNumber?: number | null;
+  otpExpires?: Date | null;
+  otpExpiry?: Date | null;
+  password?: string;
+  personalIdInfo?: PersonalIdInfoWhereUniqueInput | null;
+  personalIdInformation?: string | null;
+  phoneOtp?: string | null;
+  relatedInstitution?: string | null;
+  roles?: InputJsonValue;
+  smsOtp?: string | null;
+  userCategory?: "Option1" | null;
+  username?: string;
+  userType?: "Option1" | null;
+};
