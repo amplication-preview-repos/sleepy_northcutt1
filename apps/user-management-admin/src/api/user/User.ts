@@ -1,0 +1,38 @@
+import { Address } from "../address/Address";
+import { Document } from "../document/Document";
+import { Institution } from "../institution/Institution";
+import { PersonalIdInfo } from "../personalIdInfo/PersonalIdInfo";
+import { JsonValue } from "type-fest";
+
+export type User = {
+  addressDetails: string | null;
+  addresses?: Array<Address>;
+  birthDate: string | null;
+  createdAt: Date;
+  dateOfBirth: string | null;
+  documentDetails: string | null;
+  documents?: Array<Document>;
+  email: string | null;
+  emailAddress: string | null;
+  emailAddressOtp: string | null;
+  emailOtp: string | null;
+  firstName: string | null;
+  gender?: "Option1" | null;
+  id: string;
+  institution?: Institution | null;
+  lastName: string | null;
+  mobilePhone: number | null;
+  mobilePhoneNumber: number | null;
+  otpExpires: Date | null;
+  otpExpiry: Date | null;
+  personalIdInfo?: PersonalIdInfo | null;
+  personalIdInformation: string | null;
+  phoneOtp: string | null;
+  relatedInstitution: string | null;
+  roles: JsonValue;
+  smsOtp: string | null;
+  updatedAt: Date;
+  userCategory?: "Option1" | null;
+  username: string;
+  userType?: "Option1" | null;
+};

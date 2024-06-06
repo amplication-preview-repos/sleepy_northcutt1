@@ -1,0 +1,33 @@
+import { SortOrder } from "../../util/SortOrder";
+
+export type UserOrderByInput = {
+  addressDetails?: SortOrder;
+  birthDate?: SortOrder;
+  createdAt?: SortOrder;
+  dateOfBirth?: SortOrder;
+  documentDetails?: SortOrder;
+  email?: SortOrder;
+  emailAddress?: SortOrder;
+  emailAddressOtp?: SortOrder;
+  emailOtp?: SortOrder;
+  firstName?: SortOrder;
+  gender?: SortOrder;
+  id?: SortOrder;
+  institutionId?: SortOrder;
+  lastName?: SortOrder;
+  mobilePhone?: SortOrder;
+  mobilePhoneNumber?: SortOrder;
+  otpExpires?: SortOrder;
+  otpExpiry?: SortOrder;
+  password?: SortOrder;
+  personalIdInfoId?: SortOrder;
+  personalIdInformation?: SortOrder;
+  phoneOtp?: SortOrder;
+  relatedInstitution?: SortOrder;
+  roles?: SortOrder;
+  smsOtp?: SortOrder;
+  updatedAt?: SortOrder;
+  userCategory?: SortOrder;
+  username?: SortOrder;
+  userType?: SortOrder;
+};
